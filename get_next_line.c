@@ -6,7 +6,7 @@
 /*   By: yerbs <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:16:57 by yerbs             #+#    #+#             */
-/*   Updated: 2023/11/10 12:10:02 by yerbs            ###   ########.fr       */
+/*   Updated: 2023/11/13 09:56:57 by yerbs            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,26 +95,3 @@ char	*get_next_line(int fd)
 	ft_update(&line, buffer);
 	return (line);
 }
-/*#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(void)
-{
-    int fd;
-    char *line;
-
-    fd = open("example.txt", O_RDONLY)
-    if (fd == -1)
-    {
-        perror("Error opening file");
-        return 1;
-    }
-    while ((line = get_next_line(fd)) != NULL)
-    {
-        printf("%s\n", line);
-        free(line);
-    }
-    close(fd);
-    return 0;
-}*/
